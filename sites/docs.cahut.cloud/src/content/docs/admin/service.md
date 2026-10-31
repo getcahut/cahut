@@ -150,7 +150,7 @@ curl http://127.0.0.1/-/healthz
 ```
 
 ```json
-{"version":"1.0.0","ok":true,"cahuts":[{"domain":"cahut.example.com","ok":true}]}
+{"version":"1.1.1","ok":true,"cahuts":[{"domain":"cahut.example.com","ok":true}]}
 ```
 
 A [suspended Cahut](/concepts/cahuts/#suspension) still answers `ok` at `/-/healthz`, and opens as any other: the health of the server adds `"suspended":true` to it, and does not fail an update.
